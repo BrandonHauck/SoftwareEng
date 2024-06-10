@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login_style.css">
+    <title>Login</title>
+</head>
+<body>
+  <ul class="main_menu">
+    <li><button class="image-button" onclick="window.location.href='index.html'">
+      <img src="icons/lift.png" alt="Home"></button></li>
+    <li><a class="menu" href="about.html">About</a></li>
+    <li><a class="menu" href="https://github.com/users/IT-Garcia/projects/1" target="_blank">Project Plan & Status</a></li>
+    <li><a class="menu" href="bhlogbook.html">Brandon's Logbook</a></li>
+    <li><a class="menu" href="itglogbook.html">Isai's Logbook</a></li>
+</ul>
+    <form>
+        <h1>Elevator Login</h1>
+        <div class="formcontainer">
+        <hr/>
+        <div class="container">
+          <label for="uname"><strong>Username</strong></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><strong>Password</strong></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+        <button type="submit" onclick="window.location.href='elevator.html'">Login</button>
+        <div class="container" style="background-color: #540D6E">
+          <label style="padding-left: 15px">
+          <input type="checkbox"  checked="checked" name="remember"> Remember me
+          </label>
+          <span class="psw"><a href="#"> Forgot password?</a></span>
+        </div>
+      </form>
+</body>
+</html>
