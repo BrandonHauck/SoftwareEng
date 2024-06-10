@@ -1,0 +1,117 @@
+body {
+    color: white;
+    /* background-color: #000a13; */
+    background-image: url('../images/background.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    line-height: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main_menu{
+    list-style-type: none;
+    background-color: #540d6e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main_menu li{
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 20px;
+    color: #FFB400;
+  }
+
+.menu{
+    text-decoration: none;
+    color: #f72585;
+}
+
+.menu:hover{
+    color: #b5179e;
+}
+
+.image-button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    height: 40px;
+    /* display: inline; */
+    
+}
+
+.image-button img{
+    width: 60px;
+    height: 60px;
+    /* margin: auto; */
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 30%;
+    height: 30%;
+}
+
+.portraits{
+    width: 25%;
+}
+
+.text{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 70%;
+}
+
+.button_elevator_term{
+    background-color:#f72585;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+    display: block;
+    padding: 25px 35px;
+    color: #000a13;
+    font-size: large;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 #b5179e, 0 4px 6px 0 #b5179e;
+}
+
+.button_elevator_term span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button_elevator_term span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button_elevator_term:hover span {
+    padding-right: 25px;
+  }
+  
+  .button_elevator_term:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
