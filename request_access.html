@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta name="author" content="Isai Torres Garcia">
-    <meta name="description" content="This page provides a functional GUI for Conestoga College's ESE Group 2 elevator (2024).">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="pragma" content="no-cache">        
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,8 +11,9 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/forms.css">
     <script src="scripts/scripts.js"></script>
-    <title>Elevator</title> 
+    <title>Request Access</title>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -31,30 +28,41 @@
     </nav>
 
     <section>
-        <div class="elevator_inside">
-            <h1>Elevator Interface</h1>
-            <button class="floor_button" id="floor_1"> 
-                <img src="icons/number-1.png" alt="button_floor_1">
-            </button>
-            <button class="floor_button" id="floor_2">
-                <img src="icons/number-2.png" alt="button_floor_2">
-            </button>
-            <button class="floor_button" id="floor_3">
-                <img  src="icons/number-3.png" alt="button_floor_3">
-            </button>
-            <div id="status-box">
-                No button pressed yet.
+        <form action="php/request_access.php" method="post">
+            <h1>Request Access</h1>
+            <div class="request_access">
+                <label for="user_name"><strong>User Name</strong></label>
+                <input type="text" placeholder="Enter First Name" name="user_name" required>
+                <label for="user_lastname"><strong>Last Name</strong></label>
+                <input type="text" placeholder="Enter Last Name" name="user_lastname" required>
+                <label for="email"><strong>Email</strong></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="passwd">Password</label>
+                <input type="text" placeholder="Password" name="passwd" required>
+                <label for="birthday"><strong>Birth date</strong></label>
+                <input type="date" name="birth_date" required>
+                <h2>Request Type</h2>
+                
+                <div class="request_options">
+                    <input type="radio" id="request1" name="request_type" value="admin_access" checked>
+                    <label for="request1"> Administrator</label>
+                    <input type="radio" id="request2" name="request_type" value="user_access">
+                    <label for="request2">User</label>    
+                </div>
+                
+                <button id="sub_bttn" type="submit">Submit</button>
+                
             </div>
-        </div>        
+        </form>
     </section>
 
     <section>
         <div id="date-time-display"></div>
-    </section>
+      </section>
   
     <footer>
     <button id="top_bttn" title="Go to top" style="display: none;">Go to Top</button>
     Brandon Hauck | Isai Torres Garcia &copy; <span id="current_year"></span> 
     </footer>
-</body> 
+</body>
 </html>

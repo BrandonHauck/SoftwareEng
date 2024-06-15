@@ -1,0 +1,86 @@
+
+body {
+    font-family: 'Saira', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+
+#project_logo{
+    display: block;
+    margin: 5% auto;
+    width: 30%;
+    height: 30%;
+}
+
+#button_elevator_term{
+    background-color:#f72585;
+    border-radius: 8px;
+    margin: 5% auto;
+    text-align: center;
+    display: block;
+    padding: 25px 35px;
+    color: #000a13;
+    font-size: large;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+}
+
+#button_elevator_term span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+#button_elevator_term span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#button_elevator_term:hover span {
+    padding-right: 25px;
+}
+
+#button_elevator_term:hover span:after {
+    opacity: 1;
+    right: 0;
+} 
+
+.portraits{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: auto;
+}
+
+div.text{
+    margin: 5% auto;
+    width: 70%;
+    background-color: #540d6ecc;
+    padding: 40px;
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+        border-radius: 10px;
+}

@@ -1,0 +1,117 @@
+
+/*============= NAVIGAATION MENU ============ */
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 20px;
+    height: 140px;
+    margin: 0;
+}
+
+nav a{
+    margin: 0px 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F6019D;
+    background-color: #540d6e;
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+        border-radius: 10px;
+}
+
+nav a:hover{
+    color: #FF4365;
+}
+
+#nav_button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    border-radius: 60px;
+}
+
+#nav_button img{
+    width: 60px;
+    height: 60px;
+}
+
+/* ================== HEADERS ======================= */
+
+h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to bottom,  
+                                #00f2ff 0%,
+                                #e2fbff 50%,
+                                #0a343f 51%,
+                                #2DE2D6  100%);
+    background-blend-mode: multiply;
+    background-size: 10px 3.5rem;
+    background-repeat: repeat;
+    background-color: #00f2ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #ffffff;
+    /* text-stroke: 1px #00423f; */
+    text-align:center;
+    margin: 20px;
+    text-shadow: 0 0 10px #2DE2D6, 
+                0 0 20px #2DE2D6, 
+                0 0 30px #2DE2D6, 
+                0 0 40px #2DE2D6, 
+                0 0 50px #2DE2D6, 
+                0 0 60px #2DE2D6, 
+                0 0 70px #2DE2D6;
+}
+
+
+/* ================== FOOTER ======================= */
+
+
+#date-time-display{
+    color: #00f2ff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#top_bttn{
+    background-color: #f72585;
+    color: white;
+    padding: 14px 0;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 1.05rem;
+}
+
+footer{
+    text-align: center;
+    color:  #F6019D;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
