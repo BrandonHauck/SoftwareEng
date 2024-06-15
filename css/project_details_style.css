@@ -1,0 +1,64 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 950px;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+h1 {
+    font-size: 160%;
+  }
+  
+  h2 {
+    font-size: 125%;
+  }
+  
+  p {
+    font-size: 100%;
+    line-height: 20px;
+    text-align: justify;
+    text-indent: 15px;
+  }
+
+  li{
+    line-height: 20px;
+    text-align: justify;
+  }
+  figure{
+    border: 2px solid green;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  img{
+    height: 300px;
+    margin: auto;
+    border: solid blue;
+    box-shadow: 10px 10px 5px gray;
+  }
+
+  figcaption{
+   
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+  }
+
+  .mkbold{
+    font-weight: bold;
+  }
+  
+  .mkunderlined{
+    text-decoration: underline;
+
+  }
+
+  #can, #hcs12{
+    font-weight: bold;
+  }
