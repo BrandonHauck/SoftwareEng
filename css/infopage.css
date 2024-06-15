@@ -63,10 +63,30 @@ body {
     right: 0;
 } 
 
+figcaption{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .portraits{
     display: flex;
     justify-content: center;
     width: 25%;
+    margin: auto;
+}
+
+#group_picture{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 5% auto;
+}
+
+#group_video{
+    display: flex;
+    justify-content: center;
+    width: 80%;
     margin: auto;
 }
 
