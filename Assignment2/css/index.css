@@ -1,0 +1,52 @@
+body {
+    background: url('../images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.vault-door {
+    background: url('../images/vaultDoor.png') no-repeat center center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.vault-door:hover{
+
+    animation: swing 0.5s infinite alternate;
+    
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+
+.vault-door.roll-off {
+    animation: rollOff 1s forwards;
+}
+
+@keyframes rollOff {
+    0% {
+        transform: rotate(0deg) ;
+    }
+    100% {
+        transform: rotate(720deg) ;
+    }
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/Style1.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <h1 id="greet"> Welcome!</h1> 
+    <!-- This form sends the username and password to authenticate.php via POST method -->
+    <form action="php/authenticate.php" method="post">
+        <!-- Input field for the username; its value will be accessible in authenticate.php via $_POST['username'] -->
+        Username: <input type="text" name="username" required><br/>
+        <!-- Input field for the password; its value will be accessible in authenticate.php via $_POST['password'] -->
+        Password: <input type="password" name="password" required><br>
+        <!-- Submit button for the form; sends the form data to authenticate.php when clicked -->
+        <button class="submit" type="submit">Log in</button> 
+        <!-- Button to redirect to the Request Access page -->
+        <input class="submit" type = submit value="Request Access" onclick="window.location.href='requestaccess.html'">
+      </form>
+    <footer>
+        <p> Copyright &copy; 2024 Brandon Hauck </p>
+    </footer>
+    <script src="js/greeting.js"></script>
+</body>
+</html>
+•
